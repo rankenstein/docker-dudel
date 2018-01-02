@@ -22,4 +22,4 @@ WORKDIR /dudel
 USER daemon
 
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD python2 manage.py runserver --host=0.0.0.0 --port=8888
+CMD ["python2", "manage.py", "runserver", "--host=0.0.0.0", "--port=8888"]
